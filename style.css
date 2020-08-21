@@ -51,7 +51,7 @@ header {
    color: #c9a867;
  }
  
- .button {
+ .navigation__link {
    margin-left: 420px;
    font-family: "Montserrat", sans-serif;
    font-weight: 700;
@@ -65,10 +65,10 @@ header {
    overflow: hidden;
    cursor: pointer;
  }
- button:focus {
+ navigation__link:focus {
    outline: none;
   }
-  button:before {
+ navigation__link:before {
    content: '';
    display: block;
    position: absolute;
@@ -81,7 +81,7 @@ header {
    filter: blur(30px);
    transform: translateX(-130px) skewX(-15deg);
 }
-button:after {
+navigation__link:after {
    content: '';
    display: block;
    position: absolute;
@@ -95,17 +95,17 @@ button:after {
    transform: translateX(-100px) scaleX(-15deg);
 }
  
- .button:hover {
+ .navigation__link:hover {
    color: rgb(0, 0, 0);
    background:  #c9a867;
    cursor: pointer;
  }
- button:hover:before {
+ navigation__link:hover:before {
    transform: translateX(300px) skewX(-15deg);
    opacity: .6;
    transition: .7s;
   }
-  button:hover:after {
+  navigation__link:hover:after {
    transform: translateX(300px) skewX(-15deg);
    opacity: 1;
    transition: .7s;
