@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF.8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Tienda AlfaRP</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/png" href="shorticon.png">
+</head>
+  <header>
+    <a class="logo"><img src="logo.png" alt="logo"></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a>Packs de Donaciones</a></li>
+        </ul>
+    </nav>
+    <p href="https://alfarp.github.io/" class="button" >Volver</p>
+</header>
+<body>
+   <div class="container">
+     <div class="box">
+       <h2 class="name">PLATA</h2>
+       <a href="#" class="buy">COMPRAR</a>
+       <div class="circle"></div>
+       <img src="donadorPlata.png" class="product">
+      </div>
+       <div class="box">
+       <h2 class="name">ORO</h2>
+       <a href="#" class="buy">COMPRAR</a>
+       <div class="circle"></div>
+       <img src="donadorOro.png" class="product">
+       </div>
+       <div class="box">
+       <h2 class="name">DIAMANTE</h2>
+       <a href="#" class="buy">COMPRAR</a>
+       <div class="circle"></div>
+       <img src="donadorDiamante.png" class="product">
+       </div>
+       <div class="box">
+        <h2 class="name">ALFA</h2>
+        <a href="#" class="buy">COMPRAR</a>
+        <div class="circle"></div>
+        <img src="donadorAlfa.png" class="product">
+        </div>
+   </div>
+   <script src="vanilla-tilt.min.js"></script>
+   <script>
+	   VanillaTilt.init(document.querySelectorAll(".box"), {
+		   max: 25,
+		   speed: 400
+	});
+   </script>
+</body>
+</html>
